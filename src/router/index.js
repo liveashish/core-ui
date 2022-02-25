@@ -298,6 +298,7 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(process.env.BASE_URL),
   routes,
+  mode: 'history',
   scrollBehavior() {
     // always scroll to top
     return { top: 0 }
